@@ -14,6 +14,10 @@
 
 ## User Experience
 
+### User Stories
+
+### Scope
+
 ## Design
 
 ## Features
