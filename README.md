@@ -2,6 +2,10 @@
 
 ## Overview
 
+Oodles of Comfort is a blog which is home to many tasty ramen recipes. Users can browse a huge range of recipes to find the perfect one for them. They can also filter through the recipes should they need more specific recipes i.e vegan recipes.
+
+As well as this users will be able to create an account and log in to the blog, this will allow them to like and add comments to their favourite recipes and create a user profile. 
+
 ## Contents
 
 * User Experience
