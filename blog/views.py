@@ -6,3 +6,4 @@ from .models import Recipe
 
 class RecipeList(generic.ListView):
     model = Recipe
+    template_name = "blog/index.html"
