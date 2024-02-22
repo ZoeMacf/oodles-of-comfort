@@ -13,7 +13,7 @@ class Recipe(models.Model):
 )
     prep_time = models.CharField(max_length=30, unique=False)
     cook_time = models.CharField(max_length=30, unique=False)
-    ingredients = models.CharField(max_length=200, unique=False)
+    ingredients = models.TextField()
     recipe_steps = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
