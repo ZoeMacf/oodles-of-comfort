@@ -10,11 +10,6 @@
         <img src="{% static 'images/ramen_naruto.jpg' %}" class="hero-image" alt="placeholder">
     </div>
 </section>
-
-<div>
-    <h3>Recipe cards to go here</h3>
-</div>
-
 <div id="about-us">
     <span>
         Welcome to 'Oodles of Comfort' - your ultimate destination for soul-warming ramen recipes that bring joy with every slurp! 
@@ -26,42 +21,17 @@
     </span>
 </div>
 
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
+<!-- recipe card carousel -->
+  <div id="recipe_cards">
+    {% for recipe in recipe_list %}
         <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Recipes to be displayed here</p>
+              <p class="card-text">{{recipe.title}}</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Recipes to be displayed here</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Recipes to be displayed here</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Recipes to be displayed here</p>
-            </div>
-          </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+  {% endfor %}
 
 <!-- index.html content ends here -->
 {% endblock %}

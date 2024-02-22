@@ -12,3 +12,8 @@
     position: relative;
     padding-top: 40px;
 }
+
+/* recipe cards */
+.card {
+    display:inline-block;
+}
