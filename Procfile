@@ -1,1 +1,1 @@
-web: gunicorn codestar.wsgi
+web: gunicorn oodles_of_comfort.wsgi
