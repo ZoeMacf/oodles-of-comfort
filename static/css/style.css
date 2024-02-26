@@ -13,6 +13,22 @@
     padding-top: 40px;
 }
 
+/* about-us */
+
+#about-us-container {
+    height: 250px;
+    width: 50%;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+#about-us {
+    text-align: center;
+}
+
 /* recipe cards */
 .card {
     display:inline-block;
