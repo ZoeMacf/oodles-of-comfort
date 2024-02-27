@@ -21,17 +21,19 @@
     </span>
 </div>
 
-<!-- recipe card carousel -->
-  <div id="recipe_cards">
+<!-- recipe cards -->
+<section id="recipe-cards">
     {% for recipe in recipe_list %}
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
-            <div class="card-body">
-              <p class="card-text">{{recipe.title}}</p>
-            </div>
+    <div class="card text-bg-dark">
+        <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
+        <div class="card-img-overlay">
+          <h5 class="card-title">{{ recipe.title }}</h5>
         </div>
-  </div>
-  {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+ </div>
+</section>
 
 <!-- index.html content ends here -->
 {% endblock %}
