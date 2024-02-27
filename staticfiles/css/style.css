@@ -43,3 +43,18 @@
     object-fit: cover;
   }
 
+/* footer and social media links */
+
+footer {
+    height: 200px;
+    width: 100%;
+    border: 2px solid #000;
+
+}
+
+#social-links li {
+    float: right;
+    list-style-type: none;
+    margin-right: 20%;
+    margin-top: 50px;
+}
