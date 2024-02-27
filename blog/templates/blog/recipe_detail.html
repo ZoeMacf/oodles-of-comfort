@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+<h1>{{recipe.title}}</h1>
+
+
+<div id="recipe-image-container">
+    <img class="img-thumbnail" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
+</div>
+
+<div id="recipe-detail">
+<p>Prep Time: {{recipe.prep_time}}</p>
+<p>Cook Time: {{recipe.cook_time}}</p>
+<p>Ingredients: {{recipe.ingredients | safe}}</p>
+<p>Steps: {{recipe.recipe_steps | safe}}</p>
+</div>
+
+{% endblock %}

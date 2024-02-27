@@ -37,11 +37,18 @@
     margin: 5px;
 }
 
-.card-img-top{
+.card-img-top {
     height: 150px;
     width: 250px;
     object-fit: cover;
   }
+
+/* recipe detail page */
+
+.img-thumbnail {
+    height: 250px;
+    width: 250px;
+}
 
 /* footer and social media links */
 
