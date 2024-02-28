@@ -9,6 +9,6 @@ class PostAdmin(SummernoteModelAdmin):
     search_fields = ['title']
     list_filter = ('status',)
     prepopulated_fields = {'slug': ('title',)}
-    summernote_fields = ('ingredients', 'recipe_steps',)
+    summernote_fields = ('ingredients', 'recipe_steps', 'recipe_blurb')
 
 # Register your models here.
