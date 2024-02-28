@@ -7,7 +7,7 @@ from .models import Recipe
 class RecipeList(generic.ListView):
     """View all of the recipes"""
     model = Recipe
-    template_name = "blog/index.html"
+    template_name = "blog/recipe_list.html"
 
 class RecipeDetail(generic.DetailView):
     """View a single recipe"""
