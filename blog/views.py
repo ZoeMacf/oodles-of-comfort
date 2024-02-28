@@ -4,6 +4,12 @@ from .models import Recipe
 
 # Create your views here.
 
+class RecipeCarousel(generic.ListView):
+    """View a selection of recipes at random"""
+    model = Recipe
+    template_name = "blog/index.html"
+
+
 class RecipeList(generic.ListView):
     """View all of the recipes"""
     model = Recipe
