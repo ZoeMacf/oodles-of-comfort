@@ -6,14 +6,14 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0004_recipe_featured_image'),
+        ("blog", "0004_recipe_featured_image"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='recipe',
-            name='recipe_blurb',
-            field=models.TextField(default='this_will_be_a_blurb'),
+            model_name="recipe",
+            name="recipe_blurb",
+            field=models.TextField(default="this_will_be_a_blurb"),
             preserve_default=False,
         ),
     ]
