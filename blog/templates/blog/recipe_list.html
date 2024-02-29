@@ -12,7 +12,7 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">{{ recipe.title }}</h5>
+              <a href="{% url 'recipe_detail' recipe.id %}" class="card-title">{{ recipe.title }}</a>
               <p class="card-text"> {{ recipe.recipe_blurb | safe }}</p>
             </div>
           </div>
