@@ -1,5 +1,5 @@
 from django.db import models
-from users import UserProfile
+from users import UserProfile, LikedRecipe
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -21,6 +21,7 @@ class Recipe(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     featured_image = CloudinaryField("image", default="placeholder")
     recipe_blurb = models.TextField()
+    recipe_likes = models.ForeignKey(LikedRecipe, related_name="recipe_likes")
 
 class Comment(models.Model):
     recipe = models.ForeignKey(
