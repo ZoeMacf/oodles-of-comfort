@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'cloudinary',
 
     #MYAPPS
-    'blog'
+    'blog',
+    'users'
 ]
 
 SITE_ID = 1
