@@ -1,4 +1,3 @@
-import uuid
 from django.db import models
 from users.models import UserProfile
 from cloudinary.models import CloudinaryField
@@ -24,8 +23,6 @@ class Recipe(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     featured_image = CloudinaryField("image", default="placeholder")
     recipe_blurb = models.TextField()
-    # recipe_likes = models.ForeignKey(LikedRecipe, related_name="recipe_likes")
-    # recipe_tag = models.ForeignKey(RecipeTag, related_name="recipe_tag")
 
 class Comment(models.Model):
     """ Creates a model for the comments on recipe posts"""
@@ -53,4 +50,3 @@ class RecipeTag(models.Model):
     """Creates a model for the tags to be used on Recipe model"""
 
     tag_name = models.CharField(max_length=20, unique=True)
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
