@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+
+<h1>{{userprofile.username}}</h1>
+
+<div id="user-profile-picture">
+    <img class="img-thumbnail" src=" {{ userprofile.featured_image.url }}" alt="{{ recipe.title }}">
+</div>
+
+<div><p>Account Created on: {{userprofile.date_joined}}</p></div>
+
+{% endblock %}
