@@ -13,6 +13,9 @@ class UserProfile(models.Model):
     user_img = CloudinaryField("image", default="placeholder")
     email = models.EmailField()
     date_joined = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.username}"
     
 
 
