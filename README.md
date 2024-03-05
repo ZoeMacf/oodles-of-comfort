@@ -81,6 +81,8 @@ As well as this users will be able to create an account and log in to the blog, 
 
 #### Colour Scheme
 
+<img src="./documentation/colour_scheme/colour-scheme.PNG">
+
 #### Typography
 
 ### Database Design
