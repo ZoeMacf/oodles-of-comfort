@@ -12,11 +12,11 @@ import random
 
 
 def RandomRecipes(request):
-    """Assign the recipes to an object called all_recipes, randomise and display 5 to the view"""
+    """Assign the recipes to an object called all_recipes, randomise and display 4 to the view"""
 
     all_recipes = Recipe.objects.all()
 
-    randomised_recipes = all_recipes.order_by("?")[:5]
+    randomised_recipes = all_recipes.order_by("?")[:4]
 
     return render(
         request, "blog/index.html", {"randomised_recipes": randomised_recipes}
