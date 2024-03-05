@@ -11,6 +11,8 @@ As well as this users will be able to create an account and log in to the blog, 
 * User Experience
 - [Design](#design)
     - [Wireframes](#wireframes)
+    - [Site Styling](#site-styling)
+    - [Database Design](#database-design)
 * Features
 * Testing
 * Languages and Technologies
@@ -52,6 +54,50 @@ As well as this users will be able to create an account and log in to the blog, 
 <details><summary>404 Page</summary>
 <img src="./documentation/wireframes/404page-desktop.png">
 </details>
+
+#### Mobile
+
+<details><summary>Home Page</summary>
+<img src="./documentation/wireframes/HomePageMobile.png">
+</details>
+
+<details><summary>Recipe List</summary>
+<img src="./documentation/wireframes/RecipeListMobile.png">
+</details>
+
+<details><summary>Recipe Post</summary>
+<img src="./documentation/wireframes/RecipeDetailMobile.png">
+</details>
+
+<details><summary>User Profile</summary>
+<img src="./documentation/wireframes/User Profile Page.png">
+</details>
+
+<details><summary>404</summary>
+<img src="./documentation/wireframes/404Mobile.png">
+</details>
+
+### Site Styling
+
+#### Colour Scheme
+
+#### Typography
+
+### Database Design
+
+#### ERD - Entity Relationship Diagram
+
+### Models
+
+#### Recipe Model
+
+#### Recipe Tag Model
+
+#### UserProfile Model
+
+#### Comment Model
+
+#### LikedRecipe Model
 
 ## Features
 
