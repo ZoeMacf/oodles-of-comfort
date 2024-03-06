@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from .forms import RecipeCommentsForm
 from .models import Recipe
 import random
 
@@ -31,6 +32,15 @@ def recipe_detail(request, slug):
     recipe = get_object_or_404(queryset, slug=slug)
     comments = recipe.comments.all().order_by("-created_on")
     comment_count = recipe.comments.filter(approved=True).count()
+    recipe_comments_form = RecipeCommentsForm()
+
+    if request.method == "POST":
+    recipe_comments_form = RecipeCommentsForm(data=request.POST)
+    if recipe_comments_form.is_valid():
+        comment = recipe_comments_form.save(commit=False)
+        comment.author = request.user
+        comment.post = post
+        comment.save()
 
     return render(
         request,
@@ -38,5 +48,6 @@ def recipe_detail(request, slug):
         {"recipe": recipe,
         "comments" : comments,
         "comment_count": comment_count,
+        "recipe_comments_form": recipe_comments_form,
         },
     )
