@@ -4,7 +4,6 @@ from .models import UserProfile
 
 # Create your views here.
 
-# @login_required
 class UserDetail(generic.DetailView):
     """View user's profile information"""
 

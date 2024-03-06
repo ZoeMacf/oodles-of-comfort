@@ -1,15 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Recipe
 import random
 
 # Create your views here.
-
-# class RecipeCarousel(generic.ListView):
-#     """View a randomised selection of recipes """
-#     model = Recipe
-#     template_name = "blog/index.html"
-
 
 def RandomRecipes(request):
     """Assign the recipes to an object called all_recipes, randomise and display 4 to the view"""
@@ -30,8 +24,14 @@ class RecipeList(generic.ListView):
     template_name = "blog/recipe_list.html"
 
 
-class RecipeDetail(generic.DetailView):
-    """View a single recipe"""
+def recipe_detail(request, slug):
+    """ Will display one recipe from the model Recipe"""
 
-    model = Recipe
-    template_name = "blog/recipe_detail.html"
+    queryset = Recipe.objects.filter(status=1)
+    recipe = get_object_or_404(queryset, slug=slug)
+
+    return render(
+        request,
+        "blog/recipe_detail.html",
+        {"recipe": recipe},
+    )

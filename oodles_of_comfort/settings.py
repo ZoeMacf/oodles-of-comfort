@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-zoemacf-oodlesofcomfort-7o9pxpemuie.ws-eu108.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-zoemacf-oodlesofcomfort-flxt9dbdnjx.ws-eu108.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
@@ -49,11 +49,17 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django_summernote',
     'cloudinary',
+    'crispy_forms',
+    'crispy_bootstrap5',
 
     #MYAPPS
     'blog',
     'users'
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
