@@ -70,7 +70,7 @@
                 class="btn btn-signup btn-lg">Submit</button>
             </form>
             {% else %}
-            <p>Log in to leave a comment</p>
+            <p>Log in to leave a comment <br> Don't have an account, <a href="{% url 'account_signup' %}">Sign up here</a></p>
             {% endif %}
           </div>
         </div>
