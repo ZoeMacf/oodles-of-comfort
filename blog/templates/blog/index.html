@@ -4,34 +4,31 @@
 
 <!-- index.html content starts here -->
 
-<h1>Oodles of Comfort</h1>
-<section id="hero-image-container">
-    <div>
-        <img src="{% static 'images/ramen_naruto.jpg' %}" class="hero-image" alt="placeholder">
+<h1 id="site-heading">Oodles of Comfort</h1>
+    <div id="hero-image-container">
+        <img id="hero-image" src="{% static 'images/noodle_logo.png' %}" class="rounded mx-auto d-block" alt="vector image of a bowl of noodles">
+        <div id="about-us-container">
+        <p id="about-us">Welcome to 'Oodles of Comfort' - your ultimate destination for soul-warming ramen recipes that bring joy with every slurp! 
+        Dive into a world of homemade goodness where every bowl tells a tale of comfort and culinary creativity.
+        From classic tonkotsu to inventive vegetarian twists, our blog is your go-to source for easy-to-follow recipes,tantalizing flavor combinations, 
+        and tips for crafting the perfect bowl of steaming goodness. Whether you're a ramen aficionado or a novice in the kitchen, let 'Oodles of Comfort' inspire you to 
+        create moments of cozy indulgence with each delicious spoonful.</p>
+        </div>
     </div>
-</section>
-<div id="about-us-container">
-    <span id="about-us">
-        Welcome to 'Oodles of Comfort' - your ultimate destination for soul-warming ramen recipes that bring joy with every slurp! 
-        Dive into a world of homemade goodness where every bowl tells a tale of comfort and culinary creativity. 
-        From classic tonkotsu to inventive vegetarian twists, our blog is your go-to source for easy-to-follow recipes, 
-        tantalizing flavor combinations, and tips for crafting the perfect bowl of steaming goodness. 
-        Whether you're a ramen aficionado or a novice in the kitchen, let 'Oodles of Comfort' inspire you to 
-        create moments of cozy indulgence with each delicious spoonful.
-    </span>
-</div>
 
-<!-- recipe cards -->
-<section id="recipe-cards">
+
+    <h2 id="recipes-heading">Recipes of the day</h2>
+<div id="recipe-card-container">
     {% for recipe in randomised_recipes %}
-    <div class="card text-bg-dark">
+    <div class="card">
         <img class="card-img-top" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
-        <div class="card-img-overlay">
+        <div class="card-text">
           <a href="{% url 'recipe_detail' recipe.slug %}" class="card-title">{{ recipe.title }}</a>
         </div>
       </div>
     {% endfor %}
-</section>
+</div>
+
 
 <!-- index.html content ends here -->
 {% endblock %}
