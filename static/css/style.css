@@ -11,6 +11,11 @@ h1, h2 {
     color: #F2D492;
 }
 
+p {
+    color: #FAF9F6;
+    font-family: Nunito;
+}
+
 body {
     background-color: #202C39;
 }
@@ -98,6 +103,44 @@ body {
 .img-thumbnail {
     height: 250px;
     width: 250px;
+}
+
+/* sign up page styling */
+
+#sign-up-heading {
+    text-align: center;
+    padding: 5px;
+}
+
+#sign-in-link a {
+    text-decoration: none;
+    color: #FAF9F6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#form-container {
+    height: 100%;
+    width: 400px;
+    padding: 10px;
+    background-color:#465E71;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    background-color:#FAF9F6;
+    border: solid 2px #202C39;
+    border-radius: 2px;
+    font-family: Nunito;
+    text-align: center;   
+}
+
+#submit-btn:hover {
+    background-color: #465E71;
+    color: #FAF9F6;
 }
 
 /* footer and social media links */
