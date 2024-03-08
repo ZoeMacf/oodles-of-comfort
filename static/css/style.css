@@ -117,6 +117,16 @@ body {
     padding: 5px;
 }
 
+#sign-out-heading {
+    text-align: center;
+    padding: 5px;
+}
+
+#sign-out {
+    text-align: center;
+    padding: 5px;
+}
+
 #sign-in {
     text-align: center;
 }
