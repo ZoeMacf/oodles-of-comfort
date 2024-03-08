@@ -105,14 +105,28 @@ body {
     width: 250px;
 }
 
-/* sign up page styling */
+/* sign up/out and login pages*/
 
 #sign-up-heading {
     text-align: center;
     padding: 5px;
 }
 
-#sign-in-link a {
+#sign-in-heading {
+    text-align: center;
+    padding: 5px;
+}
+
+#sign-in {
+    text-align: center;
+}
+
+.sign-in-link a {
+    text-decoration: none;
+    color: #FAF9F6;
+}
+
+#forgot-password {
     text-decoration: none;
     color: #FAF9F6;
 }
