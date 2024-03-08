@@ -25,11 +25,6 @@ body {
     color: #FAF9F6;
 }
 
-.active {
-    color: #FAF9F6;
-    text-decoration: underline;
-}
-
 #site-heading {
   padding: 5px;
   text-align: center;
