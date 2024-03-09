@@ -100,9 +100,31 @@ body {
 
 /* recipe detail page */
 
-.img-thumbnail {
-    height: 250px;
-    width: 250px;
+#recipe-heading {
+    padding: 5px;
+    margin: 10px 30px;
+}
+
+#recipe-image-container {
+    height: 25%;
+    width: 25%;
+    margin: 10px;   
+}
+
+#recipe-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-info {
+    width: 50%;
+    border-top: solid 2px #465E71;
+    border-bottom: solid 2px #465E71;
+    background-color: #465E71;
+    padding: 20px;
+    margin: 25px;
+    font-style: Nunito;
+
 }
 
 /* sign up/out and login pages*/

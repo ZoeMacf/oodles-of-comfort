@@ -2,18 +2,23 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<h1>{{recipe.title}}</h1>
-
+<h1 id="recipe-heading">{{recipe.title}}</h1>
 
 <div id="recipe-image-container">
-    <img class="img-thumbnail" src=" {{ recipe.featured_image.url }}" alt="{{ recipe.title }}">
+  <img src="{{recipe.featured_image.url}}" class="img-thumbnail" alt="...">
 </div>
 
 <div id="recipe-detail">
+  <div class="recipe-info">
 <p>Prep Time: {{recipe.prep_time}}</p>
 <p>Cook Time: {{recipe.cook_time}}</p>
+  </div>
+<div class="recipe-info">
 <p>Ingredients: {{recipe.ingredients | safe}}</p>
+</div>  
+<div class="recipe-info">
 <p>Steps: {{recipe.recipe_steps | safe}}</p>
+</div>
 </div>
 
 <!-- Will display total amount of comments -->
