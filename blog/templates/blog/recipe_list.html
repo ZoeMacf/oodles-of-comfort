@@ -1,7 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 {% load static %}
 
-<h1>Choose your next favourite dish!</h1>
+<div id="recipe-search-container">
+  <h1 id="recipe-list-heading">Choose your next favourite dish!</h1>
+  <div>
+    <input id="recipe-search"type="text" placeholder="Search recipes.."><button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+</div>
 
 <div id="recipe-list-container">
   <ul>

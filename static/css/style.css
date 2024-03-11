@@ -100,6 +100,37 @@ body {
 
 /* recipe list page */
 
+#recipe-list-heading {
+    margin: 10px 35px;
+    padding: 5px;
+}
+
+#recipe-search-container {
+    display: flex;
+    justify-content:space-between;
+    padding: 5px;
+    margin: 5px;
+}
+
+#recipe-search {
+    width: 200px;
+    margin: 25px 5px;
+    border-radius: 5px;
+}
+
+#search-btn {
+    background-color:#FAF9F6;
+    border: solid 2px #202C39;
+    border-radius: 2px;
+}
+
+#search-btn:hover {
+    background-color: #465E71;
+    color: #FAF9F6;
+}
+
+
+
 .recipe-holder {
     border-top: 1px solid #465E71;
     border-bottom: 1px solid #465E71;
