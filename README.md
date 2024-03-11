@@ -93,6 +93,18 @@ Due to this, I changed the colour scheme to more softer colours.
 
 #### Typography
 
+##### Heading Font
+<img src="./documentation/fonts/heading-fonts.PNG">
+
+For the headings throughout the site I went with the font Madimi One. 
+
+This font suits the overall minimal style of the site. 
+
+##### Content Font
+<img src="./documentation/fonts/content-font.PNG">
+
+For the overall content of the site I decided to use the font Nunito, this font is quite similar to Madimi One and pairs with it quite well and is legible for the large amount of content with the recipes. 
+
 ### Database Design
 
 #### ERD - Entity Relationship Diagram
