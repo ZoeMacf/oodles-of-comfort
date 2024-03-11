@@ -129,8 +129,6 @@ body {
     color: #FAF9F6;
 }
 
-
-
 .recipe-holder {
     border-top: 1px solid #465E71;
     border-bottom: 1px solid #465E71;
@@ -147,7 +145,7 @@ body {
 }
 
 #recipe-thumbnail {
-    width: 100%; /* or any custom size */
+    width: 100%; 
     height: 100%; 
     object-fit: cover;
 }
@@ -158,9 +156,6 @@ body {
     margin: 10px 35px;
     padding: 5px;
 }
-
-
-
 
 /* recipe detail page */
 
@@ -189,6 +184,44 @@ body {
     margin: 25px;
     font-style: Nunito;
 
+}
+
+/* user-profile page */
+
+#user-details-container {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#user-img-container {
+    height: 150px;
+    width: 150px;
+    border: solid 5px #465E71;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#user-thumbnail {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+#user-details {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border-top: solid 1px #465E71;
+    border-bottom: solid 1px #465E71;
+}
+
+#favourite-recipes-heading {
+    padding: 5px;
+    margin: 10px;
+    border-bottom: solid 1px #465E71;
 }
 
 /* sign up/out and login pages*/
