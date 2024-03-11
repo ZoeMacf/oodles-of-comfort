@@ -6,7 +6,7 @@ a {
 
 /* index page styling */
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: Madimi One;
     color: #F2D492;
 }
@@ -97,6 +97,31 @@ body {
     padding: 5px;
     object-fit: cover;
   }
+
+/* recipe list page */
+
+.recipe-holder {
+    border-top: 1px solid #465E71;
+    border-bottom: 1px solid #465E71;
+    padding: 5px;
+    margin: 5px 5px;
+    list-style: none;
+}
+
+#recipe-list-img {
+    height: 200px;
+    width: 200px;
+    border: solid 3px #FAF9F6;
+    margin: 5px;
+}
+
+#recipe-thumbnail {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: cover;
+}
+
+
 
 /* recipe detail page */
 
