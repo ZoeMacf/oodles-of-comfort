@@ -4,7 +4,11 @@
 <div id="recipe-search-container">
   <h1 id="recipe-list-heading">Choose your next favourite dish!</h1>
   <div>
-    <input id="recipe-search"type="text" placeholder="Search recipes.."><button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <form action="{% url 'recipe_search' %}" method="POST">
+      {% csrf_token %}
+      <input id="recipe-search"type="search" placeholder="Search recipes.." value="{{recipe_search}}" name ="search">
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>  
   </div>
 </div>
 

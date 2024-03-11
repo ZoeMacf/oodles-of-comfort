@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.db.models import Q
 from .forms import RecipeCommentsForm
 from django.contrib import messages
 from .models import Recipe
@@ -24,6 +25,17 @@ class RecipeList(generic.ListView):
 
     model = Recipe
     template_name = "blog/recipe_list.html"
+
+def recipe_search(request):
+
+    if request.method == "POST":
+        search = request.POST['search']
+        recipes = Recipe.objects.filter(title__contains=search)
+
+        return render(request, 
+        "blog/recipe_search.html",
+        {'search' :search,
+        'recipes' :recipes})
 
 
 def recipe_detail(request, slug):

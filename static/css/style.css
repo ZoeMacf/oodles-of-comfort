@@ -152,6 +152,14 @@ body {
     object-fit: cover;
 }
 
+/* recipe search page */
+
+#recipe-search-heading {
+    margin: 10px 35px;
+    padding: 5px;
+}
+
+
 
 
 /* recipe detail page */
