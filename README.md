@@ -83,6 +83,14 @@ As well as this users will be able to create an account and log in to the blog, 
 
 <img src="./documentation/colour_scheme/colour-scheme.PNG">
 
+During the initial planning of the overall site design, I had gone with the above colour scheme as it I felt that it would like nice alongside the chosen images for my recipes however on adding the CSS to my index.html page the overall look was difficult to read. 
+
+Due to this, I changed the colour scheme to more softer colours.
+
+##### Final Colour Scheme 
+<img src="./documentation/colour_scheme/final-colour-scheme.PNG">
+
+
 #### Typography
 
 ### Database Design
