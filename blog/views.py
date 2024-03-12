@@ -1,9 +1,10 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.db.models import Q
 from .forms import RecipeCommentsForm
 from django.contrib import messages
-from .models import Recipe
+from django.http import HttpResponseRedirect
+from .models import Recipe, Comment
 import random
 
 # Create your views here.
@@ -68,3 +69,23 @@ def recipe_detail(request, slug):
         "recipe_comments_form": recipe_comments_form,
         },
     )
+
+def edit_comment(recipe, slug, comment_id):
+    """ Edit posted comments"""
+    if request.method == "POST":
+
+        queryset = Recipe.objects.filter(status=1)
+        recipe = get_object_or_404(queryset, slug=slug)
+        comment = get_object_or_404(Comment, pk=comment_id)
+        recipe_comments_form = CommentForm(data=request.POST, instance=comment)
+
+        if recipe_comments_form.is_valid() and comment.author == request.user:
+            comment = recipe_comments_form.save(commit=False)
+            comment.recipe = recipe
+            comment.approved = False
+            comment.save()
+            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+
+    return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
