@@ -164,23 +164,32 @@ body {
     margin: 10px 30px;
 }
 
-#recipe-image-container {
+#recipe-img-prep-container {
+    display: flex;
     height: 25%;
     width: 25%;
-    margin: 10px;   
+    margin: 10px 25px;   
+}
+
+#recipe-prep {
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+    font-style: Nunito;
 }
 
 #recipe-detail{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .recipe-info {
-    width: 50%;
+    height: auto;
+    width: 100%;
     border-top: solid 2px #465E71;
     border-bottom: solid 2px #465E71;
     background-color: #465E71;
-    padding: 20px;
+    padding: 10px;
     margin: 25px;
     font-style: Nunito;
 

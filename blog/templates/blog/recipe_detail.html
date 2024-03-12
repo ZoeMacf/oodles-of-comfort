@@ -4,15 +4,15 @@
 
 <h1 id="recipe-heading">{{recipe.title}}</h1>
 
-<div id="recipe-image-container">
-  <img src="{{recipe.featured_image.url}}" class="img-thumbnail" alt="...">
+<div id="recipe-img-prep-container">
+  <img src="{{recipe.featured_image.url}}" class="img-thumbnail" alt="{{recipe.title}}">
+  <div id="recipe-prep">
+    <p>Prep Time: {{recipe.prep_time}}</p>
+    <p>Cook Time: {{recipe.cook_time}}</p>
+  </div>
 </div>
 
 <div id="recipe-detail">
-  <div class="recipe-info">
-<p>Prep Time: {{recipe.prep_time}}</p>
-<p>Cook Time: {{recipe.cook_time}}</p>
-  </div>
 <div class="recipe-info">
 <p>Ingredients: {{recipe.ingredients | safe}}</p>
 </div>  
