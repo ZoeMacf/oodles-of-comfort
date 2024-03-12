@@ -79,7 +79,7 @@ def edit_comment(recipe, slug, comment_id):
         comment = get_object_or_404(Comment, pk=comment_id)
         recipe_comments_form = CommentForm(data=request.POST, instance=comment)
 
-        if recipe_comments_form.is_valid() and comment.author == request.user:
+        if recipe_comments_form.is_valid() and comment.author == request.user.userprofile:
             comment = recipe_comments_form.save(commit=False)
             comment.recipe = recipe
             comment.approved = False

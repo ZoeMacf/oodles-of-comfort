@@ -219,6 +219,18 @@ body {
     border: solid 3px #465E71;
 }
 
+.btn-edit {
+    background-color:#FAF9F6;
+    border: solid 2px #202C39;
+    border-radius: 2px;
+    font-family: Nunito;
+    text-align: center; 
+}
+
+.btn-edit:hover {
+    background-color: #465E71;
+    color: #FAF9F6;
+}
 
 /* user-profile page */
 
