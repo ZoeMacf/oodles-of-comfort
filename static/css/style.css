@@ -204,7 +204,7 @@ body {
 }
 
 .comment-card {
-    height: 200px;
+    height: auto;
     width: 50%;
     padding: 10px;
     margin: 10px 35px;
