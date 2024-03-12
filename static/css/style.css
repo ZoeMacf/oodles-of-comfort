@@ -231,6 +231,19 @@ body {
     color: #FAF9F6;
 }
 
+.btn-delete{
+    background-color:#FAF9F6;
+    border: solid 2px #202C39;
+    border-radius: 2px;
+    font-family: Nunito;
+    text-align: center; 
+}
+
+.btn-delete:hover {
+    background-color: #465E71;
+    color: #FAF9F6;
+}
+
 /* user-profile page */
 
 #user-details-container {
