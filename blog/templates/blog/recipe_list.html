@@ -16,7 +16,7 @@
   <ul>
     {% for recipe in recipe_list %}
     <li class="recipe-holder">
-      <h4>{{recipe.title}}</h4>
+      <a href="{% url 'recipe_detail' recipe.slug %}"><h4>{{recipe.title}}</h4></a>
       <div id="recipe-list-img">
         <img id="recipe-thumbnail" src="{{ recipe.featured_image.url}}" alt="{{recipe.title}}">
       </div>
