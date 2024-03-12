@@ -212,9 +212,8 @@ body {
 }
 
 .input-card {
-    height: 200px;
-    width: 25%;
-    padding: 5px;
+    width: 50%;
+    padding: 20px;
     margin: 10px 35px;
     border: solid 3px #465E71;
 }
