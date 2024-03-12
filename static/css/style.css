@@ -346,19 +346,12 @@ body {
 
 /* footer and social media links */
 
-footer {
-    height: 50px;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10%;
-    background-color:  #465E71;
-}
-
 #social-links li {
     float: right;
     list-style-type: none;
     margin-right: 20%;
-    margin-top: -10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 #social-links li a {
