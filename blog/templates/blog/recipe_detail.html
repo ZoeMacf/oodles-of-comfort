@@ -68,7 +68,7 @@
       <form id="recipeCommentForm" method="post">
         {{ recipe_comments_form | crispy }}
         {% csrf_token %}
-        <button id="submitButton" type="submit"
+        <button id="submit-btn" type="submit"
           class="btn btn-signup btn-lg">Submit</button>
       </form>
       {% else %}
