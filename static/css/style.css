@@ -360,7 +360,7 @@ body {
 
 /* Media Queries */
 
-@media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     
   
   }
@@ -374,14 +374,6 @@ body {
   }
   
   
-  @media screen and (max-width: 414px) {
-    
-  }
-  
-  @media screen and (max-width: 384px) {
-    
-  }
-  
   @media screen and (max-width: 375px) {
     
   }
@@ -389,6 +381,87 @@ body {
   
   @media screen and (max-width: 320px) {
 
+    /* index page */
+
+    #site-heading {
+        margin: 10px;
+    }
+
+    #hero-image-container {
+        display:contents;
+    }
+    
+    #hero-image {
+        visibility: hidden;
+    }
+
+    #about-us-container {
+        height: auto;
+        width: 70%;
+        margin: -10px 15%;
+    }
+
+    #about-us {
+        font-size:3vw;
+    }
+
+    #recipe-card-container {
+        border: none;
+    }
+
+    /* recipe-list page */
+
+    #recipe-search-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        justify-self: center;
+        margin: 10px 25px;
+    }
+
+    /* recipe-detail page */
+
+    #recipe-detail {
+        flex-direction: column;
+    }
+
+    .recipe-info {
+        width: 80%;
+        margin: 30px;
+    }
+
+    #recipe-img-prep-container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .comment-card {
+        width: 75%
+    }
+
+    .input-card {
+        width: 75%;
+    }
+
+    /* sign up page */
+
+    #form-container {
+        width: 270px;
+        margin: 15px;
+    }
+
+    /* footer and social links */
+
+    /* footer {
+        border: solid 3px #465E71;
+    }
+
+    #social-links li {
+        border: solid 3px #465E71;
+    } */
+    
 
   }
 
