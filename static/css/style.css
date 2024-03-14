@@ -358,22 +358,48 @@ margin-top: 25px;
 color: #FAF9F6;
 }
 
+/* 404 page */
+
+#error-icon-container {
+display: flex;
+justify-content: center;
+color: #FAF9F6;
+}
+
+#error-message-container {
+height: 250px;
+width: 250px;
+text-align: center;
+}
+
+#home-btn {
+background-color:#FAF9F6;
+border: solid 2px #202C39;
+border-radius: 2px;
+font-family: Nunito;
+text-align: center;
+}
+
+#home-btn:hover {
+background-color: #465E71;
+color: #FAF9F6;
+}
 /* Media Queries */
 
 @media (max-width:1024px) {
 #recipe-card-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+display: flex;
+justify-content: center;
+flex-direction: row;
 }
 
 #recipe-card-heading {
-    margin-top: 10%;
+margin-top: 10%;
 }
 
 .card-img-top {
-    height: 100%;
-    width: 100%;
+height: 100%;
+width: 100%;
 }
 
 }
@@ -383,28 +409,28 @@ color: #FAF9F6;
 /* recipe detail page */
 
 #recipe-detail {
-    flex-direction: column;
-    justify-content: center;
+flex-direction: column;
+justify-content: center;
 }
 
 .recipe-info {
-    width: 70%;
-    margin: 25px 25px;
+width: 70%;
+margin: 25px 25px;
 }
 
 /* recipe-list page */
 
 #recipe-search-container {
-    flex-direction: column;
+flex-direction: column;
 }
 
 #recipe-list-heading {
-    font-size: 5vw;
-    margin: 10px 0px;
+font-size: 5vw;
+margin: 10px 0px;
 }
 
 #recipe-search {
-    margin: 25px 25px;
+margin: 25px 25px;
 }
 }
 
@@ -413,11 +439,11 @@ color: #FAF9F6;
 /* index page */
 
 #hero-image-container {
-    width: 85%
+width: 85%
 }
 
 #hero-image {
-    visibility: hidden;
+visibility: hidden;
 }
 
 #about-us-container {
@@ -433,23 +459,23 @@ text-wrap:wrap
 }
 
 .card {
-    height: 75%;
-    width: 75%;
-    margin: 5px;
+height: 75%;
+width: 75%;
+margin: 5px;
 }
 
 #card-img-top {
-    height: 60%;
-    width: 100%;
+height: 60%;
+width: 100%;
 }
 
 /* recipe detail page */
 
 #recipe-img-prep-container {
-    flex-direction: column;
-    height: 25%;
-    width: 50%;
-    margin: 5px 25px;
+flex-direction: column;
+height: 25%;
+width: 50%;
+margin: 5px 25px;
 }
 
 .recipe-info {
