@@ -3,23 +3,23 @@
 
 {% block content %}
 
-    <h1 id="recipe-search-heading">Recipe Results</h1>
+  <h1 id="recipe-search-heading">Recipe Results</h1>
 
-    <div id="recipe-list-container">
-        <ul>
-            {% for recipe in recipes %}
-          <li class="recipe-holder">
-            <a href="{% url 'recipe_list' %}"><h4>{{recipe.title}}</h4></a>
-            <div id="recipe-list-img">
-              <img id="recipe-thumbnail" src="{{ recipe.featured_image.url}}" alt="{{recipe.title}}">
-            </div>
-            <div id="recipe-blurb">
-              <p>{{recipe.recipe_blurb | safe}}</p>
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+  <div id="recipe-list-container">
+      <ul>
+          {% for recipe in recipes %}
+        <li class="recipe-holder">
+          <a href="{% url 'recipe_list' %}"><h4>{{recipe.title}}</h4></a>
+          <div id="recipe-list-img">
+            <img id="recipe-thumbnail" src="{{ recipe.featured_image.url}}" alt="{{recipe.title}}">
+          </div>
+          <div id="recipe-blurb">
+            <p>{{recipe.recipe_blurb | safe}}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
-  
+
 {% endblock %}

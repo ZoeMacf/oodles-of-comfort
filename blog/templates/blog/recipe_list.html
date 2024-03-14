@@ -2,30 +2,30 @@
 {% load static %}
 
 <div id="recipe-search-container">
-  <h1 id="recipe-list-heading">Choose your next favourite dish!</h1>
-  <div>
-    <form action="{% url 'recipe_search' %}" method="POST">
-      {% csrf_token %}
-      <input id="recipe-search"type="search" placeholder="Search recipes.." value="{{recipe_search}}" name ="search">
-      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>  
-  </div>
+<h1 id="recipe-list-heading">Choose your next favourite dish!</h1>
+<div>
+  <form action="{% url 'recipe_search' %}" method="POST">
+    {% csrf_token %}
+    <input id="recipe-search"type="search" placeholder="Search recipes.." value="{{recipe_search}}" name ="search">
+    <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>  
+</div>
 </div>
 
 <div id="recipe-list-container">
-  <ul>
-    {% for recipe in recipe_list %}
-    <li class="recipe-holder">
-      <a href="{% url 'recipe_detail' recipe.slug %}"><h4>{{recipe.title}}</h4></a>
-      <div id="recipe-list-img">
-        <img id="recipe-thumbnail" src="{{ recipe.featured_image.url}}" alt="{{recipe.title}}">
-      </div>
-      <div id="recipe-blurb">
-        <p>{{recipe.recipe_blurb | safe}}</p>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+<ul>
+  {% for recipe in recipe_list %}
+  <li class="recipe-holder">
+    <a href="{% url 'recipe_detail' recipe.slug %}"><h4>{{recipe.title}}</h4></a>
+    <div id="recipe-list-img">
+      <img id="recipe-thumbnail" src="{{ recipe.featured_image.url}}" alt="{{recipe.title}}">
+    </div>
+    <div id="recipe-blurb">
+      <p>{{recipe.recipe_blurb | safe}}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
 </div>
 
 {% endblock %}
