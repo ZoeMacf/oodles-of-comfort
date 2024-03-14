@@ -360,191 +360,123 @@ body {
 
 /* Media Queries */
 
-  @media screen and (max-width: 1024px) {
+/* Media Queries */
+
+@media (min-width: 320px) {
+
+/* index page */
+
+#site-heading {
+    margin: 10px;
+}
+
+#hero-image-container {
+    display:contents;
+}
+
+#hero-image {
+    visibility: hidden;
+}
+
+#about-us-container {
+    height: auto;
+    width: 70%;
+    margin: -10px 15%;
+}
+
+#about-us {
+    font-size:3vw;
+}
+
+#recipe-card-container {
+    border: none;
+}
+
+/* recipe list */
+
+#recipe-search-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    justify-self: center;
+    margin: 10px 25px;
+}
+
+
+/* recipe-detail */
+
+#recipe-detail {
+    flex-direction: column;
+}
+
+.recipe-info {
+    width: 80%;
+    margin: 30px;
+}
+
+#recipe-img-prep-container {
+    flex-direction: column;
+    width: 80%;
+}
+
+.comment-card {
+    width: 75%
+}
+
+.input-card {
+    width: 75%;
+}
+
+/* sign up / log in / register  */
+
+#form-container {
+    width: 270px;
+    margin: 15px;
+}
+
+}
+
+@media (min-width: 374px) {
+
+#form-container {
+    width: auto;
+    margin: 15px 25px;
+}
     
-  
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media (min-width: 480px) {
+
+#about-us-container {
+    margin: -70px 15%;
+}
+
+#recipes-heading {
+   margin-top: 10%;
+}
+
+}
+
+@media (min-width: 768px) {
+
+#about-us {
+font-size: 2vw;
+}
     
-  }
-  
-  @media screen and (max-width: 480px) {
-    
-  }
-  
-  
-  @media screen and (max-width: 375px) {
+}
 
-    /* index page */
+/* @media (min-width: 1024px) {
 
-    #site-heading {
-        margin: 10px;
-    }
+#recipe-card-container {
+height: 300px;
+display: flex;
+flex-wrap: wrap;
+}
 
-    #hero-image-container {
-        display:contents;
-    }
-    
-    #hero-image {
-        visibility: hidden;
-    }
+} */
 
-    #about-us-container {
-        height: auto;
-        width: 70%;
-        margin: -10px 15%;
-    }
+/* @media (min-width: 1280px) {
 
-    #about-us {
-        font-size:3vw;
-    }
-
-    #recipe-card-container {
-        border: none;
-    }
-
-    /* recipe-list page */
-
-    #recipe-search-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    form {
-        justify-self: center;
-        margin: 10px 25px;
-    }
-
-    /* recipe-detail page */
-
-    #recipe-detail {
-        flex-direction: column;
-    }
-
-    .recipe-info {
-        width: 80%;
-        margin: 30px;
-    }
-
-    #recipe-img-prep-container {
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .comment-card {
-        width: 75%
-    }
-
-    .input-card {
-        width: 75%;
-    }
-
-    /* sign up page */
-
-    #form-container {
-        width: 270px;
-        margin: 15px;
-    }
-
-    /* footer and social links */
-
-    /* footer {
-        border: solid 3px #465E71;
-    }
-
-    #social-links li {
-        border: solid 3px #465E71;
-    } */
-    
-
-    
-  }
-   
-  
-  @media screen and (max-width: 320px) {
-
-    /* index page */
-
-    #site-heading {
-        margin: 10px;
-    }
-
-    #hero-image-container {
-        display:contents;
-    }
-    
-    #hero-image {
-        visibility: hidden;
-    }
-
-    #about-us-container {
-        height: auto;
-        width: 70%;
-        margin: -10px 15%;
-    }
-
-    #about-us {
-        font-size:3vw;
-    }
-
-    #recipe-card-container {
-        border: none;
-    }
-
-    /* recipe-list page */
-
-    #recipe-search-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    form {
-        justify-self: center;
-        margin: 10px 25px;
-    }
-
-    /* recipe-detail page */
-
-    #recipe-detail {
-        flex-direction: column;
-    }
-
-    .recipe-info {
-        width: 80%;
-        margin: 30px;
-    }
-
-    #recipe-img-prep-container {
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .comment-card {
-        width: 75%
-    }
-
-    .input-card {
-        width: 75%;
-    }
-
-    /* sign up page */
-
-    #form-container {
-        width: 270px;
-        margin: 15px;
-    }
-
-    /* footer and social links */
-
-    /* footer {
-        border: solid 3px #465E71;
-    }
-
-    #social-links li {
-        border: solid 3px #465E71;
-    } */
-    
-
-  }
-
+} */
