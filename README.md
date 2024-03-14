@@ -1,5 +1,7 @@
 # Oodles of Comfort
 
+<img src="./documentation/amiresponsiveimage.PNG">
+
 ## Overview
 
 Oodles of Comfort is a blog which is home to many tasty ramen recipes. Users can browse a huge range of recipes to find the perfect one for them. They can also filter through the recipes should they need more specific recipes i.e vegan recipes.
