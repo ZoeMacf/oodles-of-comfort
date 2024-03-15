@@ -227,6 +227,40 @@ When the user wishes to sign out they are presented with a message to ensure the
 
 ## Languages and Technologies
 
+### Languages and Frameworks
+
+Throughout the creation of this project the following languages and frameworks were used.
+
+- HTML was used for the markup and templating. 
+- Django as the web framework.
+- Python was used for all backend work. 
+- CSS was used to style the site.
+- Bootstrap 5 was used throughout some elements for a responsive framekwork. 
+
+### Packages
+
+The following packages were installed throughout the development. 
+
+| Package Name| Package Description |
+| ----------- | ----------- |
+| [crispy-bootsrap5](https://github.com/django-crispy-forms/crispy-bootstrap5)     |  This package was used to create a reusable DRY approach to forms.      |
+| [Django-allAuth](https://docs.allauth.org/en/latest/)   | This package was used to provide templates, views and models necessary for user authentication.    |
+| [Summernote](https://summernote.org/)   | Summernote was used to allow for a more creative approach when posting to the database through a custom model. Text fields can now have various font and layout styling added to them.         |
+| [Whitenoise](https://pypi.org/project/whitenoise/)   | Whitenoise was used to allow the app to serve it's own static files which would be needed for deployment.        |
+
+### Tools and Programs Used. 
+
+- [GitPod](https://gitpod.io/workspaces) was used as the main IDE for the project. 
+- [Git](https://git-scm.com/) was used for version control. 
+- [GitHub](https://github.com/) for hosting my repository. 
+- [Heroku](https://id.heroku.com/login) was used for deployment. 
+- [Coolors](https://coolors.co/) was used for the colour palette. 
+- [FontAwesome](https://fontawesome.com/) for providing all icons used throughout the site. 
+- [Lucid](https://lucid.app/documents) for creating the database ERD. 
+- [AmIResponsive](https://ui.dev/amiresponsive) for creating the README header image. 
+- [Favicon.io](https://favicon.io/) for creating a favicon.
+- [Balsamiq](https://balsamiq.com/) for creating the wireframes. 
+
 ## Testing
 
 ## Deployment
