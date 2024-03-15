@@ -16,10 +16,16 @@ As well as this users will be able to create an account and log in to the blog, 
     - [Site Styling](#site-styling)
     - [Database Design](#database-design)
 - [Features](#feature)
-* Testing
-* Languages and Technologies
-* Deployment
-* Credits
+- [Languages and Technologies](#languages-and-technologies)
+    - [Languages and Frameworks](#languages-and-frameworks)
+    - [Packages](#packages)
+    - [Tools and Programs Used](#tools-and-programs-used)
+- [Testing](#testing)
+    - [Code Validation](#code-validation)
+    - [Manual Testing](#manual-Testing)
+- [Deployment](#deployment)
+- [Content](#content)
+- [Credits](#credits)
 
 ## User Experience
 
