@@ -164,6 +164,44 @@ The Comment model is used to store all of the comments created by the users. It 
 
 The LikedRecipe model was created for the purpose of adding a like feature to the recipes, these would be further implemented on the User Profile page by displaying a user's recently liked recipes. However due to time constraints it did not make this iteration and will be implemented in a future iteration. 
 
+## Agile Development
+
+[My Project Board](https://github.com/users/ZoeMacf/projects/4/views/1)
+
+This project was created using Agile methodology, this allowed for me to plan out what I wanted my application to do and how the user may wish to use it. I did find it a bit difficult to start at first as a solo developer but once I had a couple of User Stories created the rest started to come along well. 
+
+To easily group my User Stories into a more structured format I created five Epics:
+
+### Initial Set Up
+
+The purpose of this Epic was to structure what was needed to begin the application, from simply creating the Repo and installing Django to deploying the first version of the application.
+
+### UX Design
+
+This Epic was used for the design planning of the application, this involved creating the wireframes and the colour scheme for the site. 
+
+### User Experience
+
+This Epic was entirely focused on the most important part of the project, the user, stories here including viewing the data/recipes on the respective pages to site navigation. 
+
+### User Authentication
+
+The focus of this Epic was to set up the necessary requirements for authentication throughout the site so that a user can not only create an account but would have access to different features when logged in. 
+
+### Documentation
+
+And finally this Epic was used to keep track of what was needed for creating and planning the README.
+
+### MoSCoW
+
+For this project the MoSCoW technique, (Must have, Should have, Could have, Won't have) was essential for planning out my User Stories, it allowed me to prioritise what was essential to get the project working and what could be added in future.
+
+### Kanban
+
+To help visualise the project and plan accordingly with a schedule I used the Kanban system, which was implemented through GitHub Projects. 
+
+Using this I was able to plan my stories into categories of 'To Do' , 'In Progress' and 'Done'. With this I was able to see what was needed in the more essential parts of the project. 
+
 ## Features
 
 ### Navbar
