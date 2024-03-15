@@ -1,479 +1,505 @@
 /* universal styling */
 
 a {
-    text-decoration: none;
+text-decoration: none;
 }
 
 /* index page styling */
 
 h1, h2, h3, h4 {
-    font-family: Madimi One;
-    color: #F2D492;
+font-family: Madimi One;
+color: #F2D492;
 }
 
 p {
-    color: #FAF9F6;
-    font-family: Nunito;
+color: #FAF9F6;
+font-family: 'Nunito', sans-serif;
 }
 
 body {
-    background-color: #202C39;
+background-color: #202C39;
 }
 
 /* navbar custom styling*/
 
 .navbar-custom {
-    background-color: #465E71;
+background-color: #465E71;
 }
 
 .nav-link {
-    color: #FAF9F6;
+color: #FAF9F6;
 }
 
 #site-heading {
-  padding: 5px;
-  text-align: center;
+padding: 5px;
+text-align: center;
 }
 
 /* hero image css */
 
 #hero-image-container {
-    display: flex;
+display: flex;
 }
 
 #hero-image {
-    justify-content: flex-start;
-    height: 20%;
-    width: 20%;
-    padding: 10px;
+justify-content: flex-start;
+height: 20%;
+width: 20%;
+padding: 10px;
 }
 
 /* aboot us */
 
 #about-us-container {
-    height: 200px;
-    width: 50%;
-    padding: 5px;
-    margin: 40px 10%;
+height: 200px;
+width: 50%;
+padding: 5px;
+margin: 40px 10%;
 }
 
 #about-us {
-    color: #FAF9F6;
-    text-align: center; 
-    
+color: #FAF9F6;
+text-align: center; 
+
 }    
 
 /* recipe cards */
 
 #recipe-card-heading {
-    text-align: center;
-    padding: 5px;
+text-align: center;
+padding: 5px;
 }
 
 #recipe-card-container {
-    height: 250px;
-    width: 100%;
-    padding: 25px;
-    border-top: 2px solid #465E71;
-    border-bottom: 2px solid #465E71;
-    margin: 15px auto;
-    text-align: center;
-    color: #FAF9F6;
+height: 250px;
+width: 100%;
+padding: 25px;
+border-top: 2px solid #465E71;
+border-bottom: 2px solid #465E71;
+margin: 15px auto;
+text-align: center;
+color: #FAF9F6;
 }
 
 .card {
-    height: 180px;
-    width: 250px;
-    display: inline-block;
-    margin: 5px;
-    background-color: #465E71;
-    color: #FAF9F6;
-    font-family: Nunito;
+height: 180px;
+width: 250px;
+display: inline-block;
+margin: 5px;
+background-color: #465E71;
+color: #FAF9F6;
+font-family: 'Nunito', sans-serif;
 }
 
 .card-img-top {
-    height: 150px;
-    width: 250px;
-    padding: 5px;
-    object-fit: cover;
-  }
+height: 150px;
+width: 250px;
+padding: 5px;
+object-fit: cover;
+}
 
 /* recipe list page */
 
 #recipe-list-heading {
-    margin: 10px 35px;
-    padding: 5px;
+margin: 10px 35px;
+padding: 5px;
 }
 
 #recipe-search-container {
-    display: flex;
-    justify-content:space-between;
-    padding: 5px;
-    margin: 5px;
+display: flex;
+justify-content:space-between;
+padding: 5px;
+margin: 5px;
 }
 
 #recipe-search {
-    width: 200px;
-    margin: 25px 5px;
-    border-radius: 5px;
+width: 200px;
+margin: 25px 5px;
+border-radius: 5px;
 }
 
 #search-btn {
-    background-color:#FAF9F6;
-    border: solid 2px #202C39;
-    border-radius: 2px;
+background-color:#FAF9F6;
+border: solid 2px #202C39;
+border-radius: 2px;
 }
 
 #search-btn:hover {
-    background-color: #465E71;
-    color: #FAF9F6;
+background-color: #465E71;
+color: #FAF9F6;
 }
 
 .recipe-holder {
-    border-top: 1px solid #465E71;
-    border-bottom: 1px solid #465E71;
-    padding: 5px;
-    margin: 5px 5px;
-    list-style: none;
+border-top: 1px solid #465E71;
+border-bottom: 1px solid #465E71;
+padding: 5px;
+margin: 5px 5px;
+list-style: none;
 }
 
 #recipe-list-img {
-    height: 200px;
-    width: 200px;
-    border: solid 3px #FAF9F6;
-    margin: 5px;
+height: 200px;
+width: 200px;
+border: solid 3px #FAF9F6;
+margin: 5px;
 }
 
 #recipe-thumbnail {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
+width: 100%; 
+height: 100%; 
+object-fit: cover;
 }
 
 /* recipe search page */
 
 #recipe-search-heading {
-    margin: 10px 35px;
-    padding: 5px;
+margin: 10px 35px;
+padding: 5px;
 }
 
 /* recipe detail page */
 
 #recipe-heading {
-    padding: 5px;
-    margin: 10px 30px;
+padding: 5px;
+margin: 10px 30px;
 }
 
 #recipe-img-prep-container {
-    display: flex;
-    height: 25%;
-    width: 25%;
-    margin: 10px 25px;   
+display: flex;
+height: 25%;
+width: 25%;
+margin: 10px 25px;   
 }
 
 #recipe-prep {
-    width: 75%;
-    padding: 10px;
-    margin: 10px;
-    font-style: Nunito;
+width: 75%;
+padding: 10px;
+margin: 10px;
+font-family: 'Nunito', sans-serif;
 }
 
 #recipe-detail{
-    display: flex;
-    flex-direction: row;
+display: flex;
+flex-direction: row;
 }
 
 .recipe-info {
-    height: auto;
-    width: 100%;
-    border-top: solid 2px #465E71;
-    border-bottom: solid 2px #465E71;
-    background-color: #465E71;
-    padding: 10px;
-    margin: 25px;
-    font-style: Nunito;
+height: auto;
+width: 100%;
+border-top: solid 2px #465E71;
+border-bottom: solid 2px #465E71;
+background-color: #465E71;
+padding: 10px;
+margin: 25px;
+font-family: 'Nunito', sans-serif;
 
 }
 
 /* comments */
 
 #comment-counter {
-    padding: 5px;
-    margin: 10px 20px;
-    color: #FAF9F6;
+padding: 5px;
+margin: 10px 20px;
+color: #FAF9F6;
 }
 
 .comment-card {
-    height: auto;
-    width: 50%;
-    padding: 10px;
-    margin: 10px 35px;
-    border: solid 3px #465E71;
+height: auto;
+width: 50%;
+padding: 10px;
+margin: 10px 35px;
+border: solid 3px #465E71;
 }
 
 .input-card {
-    width: 50%;
-    padding: 20px;
-    margin: 10px 35px;
-    border: solid 3px #465E71;
+width: 50%;
+padding: 20px;
+margin: 10px 35px;
+border: solid 3px #465E71;
 }
 
 .btn-edit {
-    background-color:#FAF9F6;
-    border: solid 2px #202C39;
-    border-radius: 2px;
-    font-family: Nunito;
-    text-align: center; 
+background-color:#FAF9F6;
+border: solid 2px #202C39;
+border-radius: 2px;
+font-family: 'Nunito', sans-serif;
+text-align: center; 
 }
 
 .btn-edit:hover {
-    background-color: #465E71;
-    color: #FAF9F6;
+background-color: #465E71;
+color: #FAF9F6;
 }
 
 .btn-delete{
-    background-color:#FAF9F6;
-    border: solid 2px #202C39;
-    border-radius: 2px;
-    font-family: Nunito;
-    text-align: center; 
+background-color:#FAF9F6;
+border: solid 2px #202C39;
+border-radius: 2px;
+font-family: 'Nunito', sans-serif;
+text-align: center; 
 }
 
 .btn-delete:hover {
-    background-color: #465E71;
-    color: #FAF9F6;
+background-color: #465E71;
+color: #FAF9F6;
 }
 
 /* user-profile page */
 
 #user-details-container {
-    height: 250px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+height: 250px;
+width: 100%;
+display: flex;
+justify-content: space-around;
 }
 
 #user-img-container {
-    height: 150px;
-    width: 150px;
-    border: solid 5px #465E71;
-    border-radius: 5px;
-    margin: 10px;
+height: 150px;
+width: 150px;
+border: solid 5px #465E71;
+border-radius: 5px;
+margin: 10px;
 }
 
 #user-thumbnail {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
+width: 100%; 
+height: 100%; 
+object-fit: cover;
 }
 
 #user-details {
-    height: 200px;
-    width: 200px;
-    padding: 5px;
-    margin: 10px;
-    border-top: solid 1px #465E71;
-    border-bottom: solid 1px #465E71;
+height: 200px;
+width: 200px;
+padding: 5px;
+margin: 10px;
+border-top: solid 1px #465E71;
+border-bottom: solid 1px #465E71;
 }
 
 #favourite-recipes-heading {
-    padding: 5px;
-    margin: 10px;
-    border-bottom: solid 1px #465E71;
+padding: 5px;
+margin: 10px;
+border-bottom: solid 1px #465E71;
 }
 
 /* sign up/out and login pages*/
 
 #sign-up-heading {
-    text-align: center;
-    padding: 5px;
+text-align: center;
+padding: 5px;
 }
 
 #sign-in-heading {
-    text-align: center;
-    padding: 5px;
+text-align: center;
+padding: 5px;
 }
 
 #sign-out-heading {
-    text-align: center;
-    padding: 5px;
+text-align: center;
+padding: 5px;
 }
 
 #sign-out {
-    text-align: center;
-    padding: 5px;
+text-align: center;
+padding: 5px;
 }
 
 #sign-in {
-    text-align: center;
+text-align: center;
 }
 
 .sign-in-link a {
-    text-decoration: none;
-    color: #FAF9F6;
+text-decoration: none;
+color: #FAF9F6;
 }
 
 #forgot-password {
-    text-decoration: none;
-    color: #FAF9F6;
+text-decoration: none;
+color: #FAF9F6;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 #form-container {
-    height: 100%;
-    width: 400px;
-    padding: 10px;
-    background-color:#465E71;
-    border-radius: 5px;
+height: 100%;
+width: 400px;
+padding: 10px;
+background-color:#465E71;
+border-radius: 5px;
 }
 
 #submit-btn {
-    background-color:#FAF9F6;
-    border: solid 2px #202C39;
-    border-radius: 2px;
-    font-family: Nunito;
-    text-align: center;   
+background-color:#FAF9F6;
+border: solid 2px #202C39;
+border-radius: 2px;
+font-family: 'Nunito', sans-serif;
+text-align: center;   
 }
 
 #submit-btn:hover {
-    background-color: #465E71;
-    color: #FAF9F6;
+background-color: #465E71;
+color: #FAF9F6;
 }
 
 /* footer and social media links */
 
 #social-links li {
-    float: right;
-    list-style-type: none;
-    margin-right: 20%;
-    margin-bottom: 25px;
-    margin-top: 25px;
+float: right;
+list-style-type: none;
+margin-right: 20%;
+margin-bottom: 25px;
+margin-top: 25px;
 }
 
 #social-links li a {
-    color: #FAF9F6;
+color: #FAF9F6;
 }
 
+/* 404 page */
+
+#error-icon-container {
+display: flex;
+justify-content: center;
+color: #FAF9F6;
+}
+
+#error-message-container {
+height: 250px;
+width: 250px;
+text-align: center;
+}
+
+#home-btn {
+background-color:#FAF9F6;
+border: solid 2px #202C39;
+border-radius: 2px;
+font-family: 'Nunito', sans-serif;
+text-align: center;
+}
+
+#home-btn:hover {
+background-color: #465E71;
+color: #FAF9F6;
+}
 /* Media Queries */
 
 @media (max-width:1024px) {
-    #recipe-card-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
+#recipe-card-container {
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
 
-    #recipe-card-heading {
-        margin-top: 10%;
-    }
+#recipe-card-heading {
+margin-top: 10%;
+}
 
-    .card-img-top {
-        height: 100%;
-        width: 100%;
-    }
+.card-img-top {
+height: 100%;
+width: 100%;
+}
 
 }
 
 @media (max-width: 768px) {
 
-    /* recipe detail page */
+/* recipe detail page */
 
-    #recipe-detail {
-        flex-direction: column;
-        justify-content: center;
-    }
+#recipe-detail {
+flex-direction: column;
+justify-content: center;
+}
 
-    .recipe-info {
-        width: 70%;
-        margin: 25px 25px;
-    }
+.recipe-info {
+width: 70%;
+margin: 25px 25px;
+}
 
-    /* recipe-list page */
+/* recipe-list page */
 
-    #recipe-search-container {
-        flex-direction: column;
-    }
+#recipe-search-container {
+flex-direction: column;
+}
 
-    #recipe-list-heading {
-        font-size: 5vw;
-        margin: 10px 0px;
-    }
+#recipe-list-heading {
+font-size: 5vw;
+margin: 10px 0px;
+}
 
-    #recipe-search {
-        margin: 25px 25px;
-    }
+#recipe-search {
+margin: 25px 25px;
+}
 }
 
 @media (max-width: 480px) {
 
-    /* index page */
+/* index page */
 
-    #hero-image-container {
-        width: 85%
-    }
-
-    #hero-image {
-        visibility: hidden;
-    }
-
-    #about-us-container {
-    height: auto;
-    width: 75%;
-    padding: 5px;
-    margin: 30px 5%;
-    }
-
-    #about-us {
-    font-size: 3vw;
-    text-wrap:wrap
-    }
-
-    .card {
-        height: 75%;
-        width: 75%;
-        margin: 5px;
-    }
-
-    #card-img-top {
-        height: 60%;
-        width: 100%;
-    }
-
-    /* recipe detail page */
-
-    #recipe-img-prep-container {
-        flex-direction: column;
-        height: 25%;
-        width: 50%;
-        margin: 5px 25px;
+#hero-image-container {
+width: 85%
 }
 
-    .recipe-info {
-    width: 90%;
+#hero-image {
+visibility: hidden;
+}
+
+#about-us-container {
+height: auto;
+width: 75%;
+padding: 5px;
+margin: 30px 5%;
+}
+
+#about-us {
+font-size: 3vw;
+
+}
+
+.card {
+height: 75%;
+width: 75%;
+margin: 5px;
+}
+
+#card-img-top {
+height: 60%;
+width: 100%;
+}
+
+/* recipe detail page */
+
+#recipe-img-prep-container {
+flex-direction: column;
+height: 25%;
+width: 50%;
+margin: 5px 25px;
+}
+
+.recipe-info {
+width: 90%;
 
 }
 
 .comment-card {
-    width: 80%;
-    margin: 10px 45px;
+width: 80%;
+margin: 10px 45px;
 
 }
 
 .input-card {
-    width: 80%;
-    margin: 10px 45px 
+width: 80%;
+margin: 10px 45px 
 
 }
 
 }
 
 @media (max-width:384px) {
-    .card-title {
-    font-size: 3vw;
+.card-title {
+font-size: 3vw;
 }
 
 }
