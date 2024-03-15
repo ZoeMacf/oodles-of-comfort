@@ -400,6 +400,38 @@ There are no issues using the site on Google Chrome via laptop or mobile.
 | `Sign Out Page`  |   |   |   |   |
 | User can sign out of their account | Once they have clicked on the Logout link and are brought to sign out page user can sign out of their account  | User account 'ManualTestUser' is logged out | Pass  |
 
+## Bugs
+
+The following are bugs which I came across during development and were resolved. 
+
+### Username not showing
+
+<img src="./documentation/bugs/username_not_showing.PNG">
+
+Early in development despite a user account being created and the user logged in, when a comment was posted the user appeared as 'None'. 
+
+This was fixed by adding user.userprofile to the comments view function. 
+
+### Comment box not lining up
+<img src="./documentation/bugs/comment-box-not-aligned.PNG">
+
+Due to a clash in CSS stlyes and the comment box being made using Bootstrap 5 cards I had to create a custom class to be able to style the comments, card class had been used for recipe cards on index.html
+
+### Comment Input Overflowing
+<img src="./documentation/bugs/comment-input-overflowing.PNG">
+
+Incorrect CSS values were causing the input box to overflow, this was amended by setting an auto height to the container. 
+
+### Footer Stuck in middle
+<img src="./documentation/bugs/footerstuckinmiddle.PNG">
+
+I'm unsure as to what caused this bug as I reviewed previous work using a footer and it was the same style of CSS used, to remedy this I removed the colour for the footer. 
+
+### Social Links not showing
+<img src="./documentation/bugs/social-links-missing320.PNG">
+
+Due to an inconsistent layout for the media queries the social media links were not displaying correctly, after restructuring the media queries this was fixed.
+
 ## Deployment
 
 ## Credits
