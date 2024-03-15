@@ -29,6 +29,29 @@ As well as this users will be able to create an account and log in to the blog, 
 
 ## User Experience
 
+### User Stories
+
+#### First Time User
+
+- As a first time user I would like to be able to easily view the site across any device I own. 
+- As a first time user I would like to easily navigate the site to see what content is available to me. 
+- As a first time user I would like to be able to create an account for the site. 
+- As first time user I would like to be able to sign in to my account easily.
+- As a first time user I would like to be able to view my User Profile page. 
+- As a first time user I would like to be able to log out of my account. 
+
+#### Authenticated User
+
+- As an authenticated user I would like to be able to leave a comment on the recipes I am interested in. 
+- As an authenticated user I would like to edit any of the comments that I have posted to the site. 
+- As an authenticated user I would like to have the option to delete my comments should I wish.
+
+#### Site Admin 
+- As a site admin I want to easily log in to the admin panel. 
+- As a site admin I want to be able to add more recipe posts to the site easily. 
+- As a site admin I want to approve any new comments. 
+- As a site admin I want to be able to approve any recently edited comments. 
+
 ## Design
 
 ### Wireframes
