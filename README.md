@@ -8,6 +8,8 @@ Oodles of Comfort is a blog which is home to many tasty ramen recipes. Users can
 
 As well as this users will be able to create an account and log in to the blog, this will allow them to like and add comments to their favourite recipes and create a user profile. 
 
+[Live Site](https://oodles-of-comfort-c62d6f5683fb.herokuapp.com/)
+
 ## Contents
 
 * User Experience
