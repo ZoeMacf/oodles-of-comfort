@@ -299,11 +299,6 @@ All of the pages for this project were tested using [Google-Lighthouse](https://
 
 <img src="./documentation/testing/lighthouse/css-validation-after.PNG">
 
-#### HTML Validation
-
-
-
-
 ## Deployment
 
 ## Credits

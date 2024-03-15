@@ -6,7 +6,7 @@
 <div>
   <form action="{% url 'recipe_search' %}" method="POST">
     {% csrf_token %}
-    <input id="recipe-search"type="search" placeholder="Search recipes.." value="{{recipe_search}}" name ="search">
+    <input id="recipe-search" type="search" placeholder="Search recipes.." value="{{recipe_search}}" name ="search">
     <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
   </form>  
 </div>
