@@ -5,8 +5,9 @@ from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
+
 class UserProfile(models.Model):
-    """ Creates a model for the UserProfile"""
+    """Creates a model for the UserProfile"""
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     username = models.CharField(max_length=50, null=True, blank=True)

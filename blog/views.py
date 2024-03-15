@@ -9,8 +9,10 @@ import random
 
 # Create your views here.
 
+
 def RandomRecipes(request):
-    """Assign the recipes to an object called all_recipes, randomise and display 4 to the view"""
+    """Assign the recipes to an object called all_recipes,
+    randomise and display 4 to the view"""
 
     all_recipes = Recipe.objects.all()
 
@@ -27,20 +29,21 @@ class RecipeList(generic.ListView):
     model = Recipe
     template_name = "blog/recipe_list.html"
 
+
 def recipe_search(request):
 
     if request.method == "POST":
-        search = request.POST['search']
+        search = request.POST["search"]
         recipes = Recipe.objects.filter(title__contains=search)
 
-        return render(request, 
-        "blog/recipe_search.html",
-        {'search' :search,
-        'recipes' :recipes})
+        return render(
+            request, "blog/recipe_search.html",
+            {"search": search, "recipes": recipes}
+        )
 
 
 def recipe_detail(request, slug):
-    """ Will display one recipe from the model Recipe"""
+    """Will display one recipe from the model Recipe"""
 
     queryset = Recipe.objects.filter(status=1)
     recipe = get_object_or_404(queryset, slug=slug)
@@ -56,22 +59,25 @@ def recipe_detail(request, slug):
         comment.recipe = recipe
         comment.save()
         messages.add_message(
-        request, messages.SUCCESS,
-        'Comment submitted successfully and is now awaiting approval!'
-    )
+            request,
+            messages.SUCCESS,
+            "Comment submitted successfully and is now awaiting approval!",
+        )
 
     return render(
         request,
         "blog/recipe_detail.html",
-        {"recipe": recipe,
-        "comments" : comments,
-        "comment_count": comment_count,
-        "recipe_comments_form": recipe_comments_form,
+        {
+            "recipe": recipe,
+            "comments": comments,
+            "comment_count": comment_count,
+            "recipe_comments_form": recipe_comments_form,
         },
     )
 
+
 def edit_comment(recipe, slug, comment_id):
-    """ Edit posted comments"""
+    """Edit posted comments"""
     if request.method == "POST":
 
         queryset = Recipe.objects.filter(status=1)
@@ -79,16 +85,20 @@ def edit_comment(recipe, slug, comment_id):
         comment = get_object_or_404(Comment, pk=comment_id)
         recipe_comments_form = CommentForm(data=request.POST, instance=comment)
 
-        if recipe_comments_form.is_valid() and comment.author == request.user.userprofile:
+        if (
+            recipe_comments_form.is_valid()
+            and comment.author == request.user.userprofile
+        ):
             comment = recipe_comments_form.save(commit=False)
             comment.recipe = recipe
             comment.approved = False
             comment.save()
-            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+            messages.add_message(request, messages.SUCCESS, "Comment Updated!")
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(
+                request, messages.ERROR, "Error updating comment!")
 
-    return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+    return HttpResponseRedirect(reverse("recipe_detail", args=[slug]))
 
 
 def comment_delete(request, slug, comment_id):
@@ -101,8 +111,10 @@ def comment_delete(request, slug, comment_id):
 
     if comment.author == request.user.userprofile:
         comment.delete()
-        messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
+        messages.add_message(request, messages.SUCCESS, "Comment deleted!")
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(
+            request, messages.ERROR, "You can only delete your own comments!"
+        )
 
-    return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+    return HttpResponseRedirect(reverse("recipe_detail", args=[slug]))

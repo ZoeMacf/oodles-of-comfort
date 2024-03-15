@@ -8,7 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Recipe(models.Model):
-    """ Creates a model of Recipe"""
+    """Creates a model of Recipe"""
 
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -27,19 +27,23 @@ class Recipe(models.Model):
     def __str__(self):
         return f"{self.title}"
 
+
 class Comment(models.Model):
-    """ Creates a model for the comments on recipe posts"""
+    """Creates a model for the comments on recipe posts"""
 
     recipe = models.ForeignKey(
-        Recipe, on_delete=models.CASCADE, related_name="comments")
+        Recipe, on_delete=models.CASCADE, related_name="comments"
+    )
     author = models.ForeignKey(
-        UserProfile, on_delete=models.CASCADE, related_name="commenter")
+        UserProfile, on_delete=models.CASCADE, related_name="commenter"
+    )
     body = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"{self.body}"
+
 
 class LikedRecipe(models.Model):
     """Creates a model for user likes on a recipe"""
@@ -51,6 +55,7 @@ class LikedRecipe(models.Model):
         UserProfile, on_delete=models.CASCADE, related_name="recipe_likes"
     )
     liked_on = models.DateTimeField(auto_now_add=True)
+
 
 class RecipeTag(models.Model):
     """Creates a model for the tags to be used on Recipe model"""

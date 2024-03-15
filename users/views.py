@@ -4,6 +4,7 @@ from .models import UserProfile
 
 # Create your views here.
 
+
 class UserDetail(generic.DetailView):
     """View user's profile information"""
 

@@ -337,6 +337,19 @@ HTML markup was validated using [W3C-HTML](https://validator.w3.org/nu/)
 
 <img src="./documentation/testing/sign-out-test.PNG">
 
+### JavaScript Validation
+
+[JSHINT](https://jshint.com/) was used to validate the comment script. 
+
+<img src="./documentation/testing/JSvalidation.PNG">
+
+### Python Validation
+
+All of the Python files were validated using PEP8 with [CI-Python-Linter](https://pep8ci.herokuapp.com/)
+
+
+
+
 ## Deployment
 
 ## Credits
