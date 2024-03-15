@@ -263,6 +263,47 @@ The following packages were installed throughout the development.
 
 ## Testing
 
+### Code Validation
+
+#### Lighthouse
+
+All of the pages for this project were tested using [Google-Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/).
+
+##### Home Page
+
+<img src="./documentation/testing/lighthouse/lighthouse-index.PNG">
+
+##### Recipe List
+
+<img src="./documentation/testing/lighthouse/lighthouse-recipe-list.PNG">
+
+##### Recipe Detail
+
+<img src="./documentation/testing/lighthouse/lighthouse-recipe-detail.PNG">
+
+##### User Profile
+
+<img src="./documentation/testing/lighthouse/lighthouse-user-profile.PNG">
+
+##### Sign UP
+
+<img src="./documentation/testing/lighthouse/lighthouse-sign-up.PNG">
+
+##### Sign In
+
+<img src="./documentation/testing/lighthouse/lighthouse-sign-in.PNG">
+
+#### CSS Validation
+
+<img src="./documentation/testing/lighthouse/css-validation-before.PNG">
+
+<img src="./documentation/testing/lighthouse/css-validation-after.PNG">
+
+#### HTML Validation
+
+
+
+
 ## Deployment
 
 ## Credits
