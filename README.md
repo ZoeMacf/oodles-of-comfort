@@ -545,6 +545,34 @@ All of the recipes and recipe blurbs were created by [ChatGpt](https://chat.open
 - Tsukemen Photo by Matthew Hamilton on [Unsplash](https://unsplash.com/photos/soup-with-vegetable-beside-chopsticks-and-glass-of-water-RA4mwm9_jKA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - User profile - Image by Stephanie Edwards from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973460)
 
+## Future Features
+
+There are many ways in which this blog site could be improved to ensure user return and new users. Some of these features were in the intial planning but unfortunately due to time constraints did not make it into this iteration but will be added in future. 
+
+### Like Recipes
+
+I would like for users to be able to like recipes, once a user likes a recipe it would then be linked to their account to revist in future. 
+
+### Recent Comments
+
+I also like the idea of adding a way for a user to view their comments, either through last five comments or a scrollable box sorted by date and they can search by a recipe. 
+
+### Recipe Tags
+
+There was a plan to have tags on the recipes such as 'vegan-friendly' so that a user can filter the list to only view what they wanted. 
+
+### User Upload Images
+
+I would like to add the option for a user to upload their own custom profile picture to their user profile as it is currently only possible through the admin panel. 
+
+### User Recipes
+
+In future I would like for users to be able to upload their own recipes to share with their fellow users. 
+
+### Recipe Videos
+
+One final feature that could improve the site a lot is the ability to host/add a video to a recipe page to demonstrate how to cook it. 
+
 ## Credits
 
 I would like to say thanks to following: 
