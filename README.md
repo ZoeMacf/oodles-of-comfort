@@ -347,8 +347,58 @@ HTML markup was validated using [W3C-HTML](https://validator.w3.org/nu/)
 
 All of the Python files were validated using PEP8 with [CI-Python-Linter](https://pep8ci.herokuapp.com/)
 
+##### Oodles_of_Comfort app
+
+All of the files passed the check bar the settings.py, there were 4 lines which were too long, these were for password validation rules in Django AllAuth - when trying to fix these the form kept breaking. 
+
+<img src="./documentation/testing/settings-pep8.PNG">
 
 
+### Manual Testing
+
+Full testing of the functionality of the site was done on the following devices:
+
+- Laptop Used : HP EliteBook 8570w
+- Mobile : Samsung S21 Plus
+
+The following browsers were used to test the functionality of the site. 
+
+* Google Chrome
+
+There are no issues using the site on Google Chrome via laptop or mobile. 
+
+| Feature Tested  | Outcome  | Test Performed  | Result  | Pass/Fail  |
+|---|---|---|---|---|
+| `Navigation`  |   |   |   |   |
+| Home Page Link  |  When the link is clicked it should direct the user to the 'Home' page | Click on 'Home' text on navbar  | Redirects to 'Home' Page  | Pass  |
+|  Recipes Page Link | When the link is clicked it should direct the user to the 'Recipes' page   | Click on 'Recipes' text on navbar  |  Redirects to 'Recipes' Page | Pass |
+| Register Page Link  | When the link is clicked it should direct the user to the 'Sign Up' page  | Click on 'Register' text on navbar  | Redirects to 'Sign Up' Page  | Pass  |
+| Sign In Page Link  | When the link is clicked it should direct the user to the 'Sign In' page  | Click on 'Sign In' text on navbar  | Redirects to 'Sign In' Page  | Pass  |
+| Sign Out Page Link  | When a user is logged in and this link is clicked it should direct the user to the 'Sign Out' page  | Click on 'Sign Out' text on navbar  | Redirects to 'Sign Out' Page  | Pass  |
+| User Profile Page Link  | When a user is logged in and the link is clicked it should direct the user to the 'User Profile' page  | Click on 'UserProfile' text on navbar  | Redirects to 'User Profile' Page  | Pass  |
+|  `Footer` |   |   |   |   |
+|  Instagram Link | When the link is clicked it open a link to Instagram in a new tab  |  Click on 'Instagram' icon | A new tab opens and directs to Instagram  | Pass |
+| YouTube Link  | When the link is clicked it open a link to YouTube in a new tab  | Click on 'YouTube' icon  |  A new tab opens and directs to YouTube | Pass  |
+|  Twitter Link | When the link is clicked it open a link to Twitter in a new tab  | Click on 'Twitter' icon  | A new tab opens and directs to Twitter  | Pass  |
+|  Facebook Link | When the link is clicked it open a link to Facebook in a new tab  | Click on 'Facebook' icon  | A new tab opens and directs to Facebook  | Pass  |
+| `Home Page` |     |   |   |   |   |
+| All information loads| When on the home page the user should see a logo if on larger screens and a blurb about the site along with a recipes of the day section | All information is displayed correctly |  | Navigate to the home page | Pass |
+|  Recipe of the day | Four recipes should be randomly displayed to the user on each refresh | Refresh the page and the featured recipes should change  |  Tested three refreshes and the recipes change | Pass  |
+| `Recipes Page`   |   |   |   |   |
+|  Recipe List| All of the recipes within the database should all be displayed in a list showing the image and a blurb for the recipe. | Scroll through 10 recipes and ensure that each image and recipe information matches up.  |  All recipes match | Pass  |
+| Search Bar  |  User should be able to search and filter for one recipe when using the search bar | Enter 'Kimchi' into the Search Bar  |  Search Result page is displayed showing 'Kimchi Ramen' | Pass  |
+| Clicking Recipe | When clicking on a recipe title the user should be brought to that recipe's page. | Click on recipe 'Miso Ramen' | Brought to 'Miso Ramen' page. | Pass|
+| `Recipe Detail Page`  |   |   |   |   |
+| View Recipe Information | When on a page for a recipe the correct image should be displayed along with the relevant recipe information  | Open page for 'Seafood Ramen'  | All of the information for this recipe is correct  | Pass  |
+|  Logged in user can comment | When a user is logged in they can add a comment to the recipe | User 'ManualTestUser' comments 'This looks super tasty!' on Curry Ramen  |  Comment is approved by admin and appears on the recipe | Pass  |
+| User can edit their comment  | When logged in 'ManualTestUser' edit their comment  | Comment changed to 'This is one of my favourites' | Comment is edited upon approval | Pass  |
+| User can delete their comment  | When logged in 'ManualTestUser' delete their comment  | Comment can no longer be seen | Comment is deleted and this is noted in admin panel | Pass  |
+| `Sign Up Page`  |   |   |   |   |
+| User can create an account | Once they have clicked on the Register link and are brought to sign up page user can create an account  | User account 'ManualTestUser' is created | Pass  |
+| `Sign In Page`  |   |   |   |   |
+| User can sign in to their account | Once the Login link is clicked the user can sign in to their account  | User account 'ManualTestUser' is logged in | Pass  |
+| `Sign Out Page`  |   |   |   |   |
+| User can sign out of their account | Once they have clicked on the Logout link and are brought to sign out page user can sign out of their account  | User account 'ManualTestUser' is logged out | Pass  |
 
 ## Deployment
 
