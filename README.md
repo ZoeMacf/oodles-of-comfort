@@ -466,6 +466,12 @@ All of the recipes and recipe blurbs were created by [ChatGpt](https://chat.open
 - Tsukemen Photo by Matthew Hamilton on [Unsplash](https://unsplash.com/photos/soup-with-vegetable-beside-chopsticks-and-glass-of-water-RA4mwm9_jKA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 - User profile - Image by Stephanie Edwards from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973460)
 
-
-
 ## Credits
+
+I would like to say thanks to following: 
+
+- [Codemy](https://www.youtube.com/watch?v=AGtae4L5BbI) This YouTube tutorial really helped me understand how to set up a search query for my database. 
+- [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-create-and-use-signals-in-django/) For help in setting up my signals.py to allow instance of UserProfile to be created. 
+- All of the tutors for Code Institute who without I would be lost for this project, they were so patient and helpful to me especially after I had to start my database/models from scratch twice.
+- My mentor Luke for helping me througough this project and insite into Django models and hosting images. 
+- Code Institute for giving me the opportunity to upskill and create these projects.
