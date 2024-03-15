@@ -117,17 +117,29 @@ For the overall content of the site I decided to use the font Nunito, this font 
 
 #### ERD - Entity Relationship Diagram
 
+<img src="./documentation/ERD.PNG">
+
 ### Models
 
 #### Recipe Model
 
+The recipe model is the central model for the entire application, all of the recipes for the blog are stored here. This model is connected to the UserProfile model through the author field. 
+
 #### Recipe Tag Model
+
+The recipe tag model was planned to hold various tags for filtering the recipes when searching, however due to time constraints it did not make it into this iteration and will be implentened in a future iteration. 
 
 #### UserProfile Model
 
+The UserProfile model was used to create a more custom model than Django's built in User model, for instance by having a field for a user profile. It is still linked to the Django User model for authentication purposes. 
+
 #### Comment Model
 
+The Comment model is used to store all of the comments created by the users. It is linked to the Recipe model so that the comments are correctly aligned with the recipe should the comments or user be deleted. It is also linked to the UserProfile model, should a user be deleted all of their comments will too be deleted. 
+
 #### LikedRecipe Model
+
+The LikedRecipe model was created for the purpose of adding a like feature to the recipes, these would be further implemented on the User Profile page by displaying a user's recently liked recipes. However due to time constraints it did not make this iteration and will be implemented in a future iteration. 
 
 ## Features
 
@@ -262,7 +274,7 @@ The following packages were installed throughout the development.
 - [Heroku](https://id.heroku.com/login) was used for deployment. 
 - [Coolors](https://coolors.co/) was used for the colour palette. 
 - [FontAwesome](https://fontawesome.com/) for providing all icons used throughout the site. 
-- [Lucid](https://lucid.app/documents) for creating the database ERD. 
+- [SmartDraw](https://app.smartdraw.com/editor.aspx?credID=-61278721&depoId=55466879&flags=128) for creating the database ERD. 
 - [AmIResponsive](https://ui.dev/amiresponsive) for creating the README header image. 
 - [Favicon.io](https://favicon.io/) for creating a favicon.
 - [Balsamiq](https://balsamiq.com/) for creating the wireframes. 
