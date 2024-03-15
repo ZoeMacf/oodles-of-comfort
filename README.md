@@ -580,7 +580,9 @@ One final feature that could improve the site a lot is the ability to host/add a
 I would like to say thanks to following: 
 
 - [Codemy](https://www.youtube.com/watch?v=AGtae4L5BbI) This YouTube tutorial really helped me understand how to set up a search query for my database. 
-- [GeeksforGeeks](https://www.geeksforgeeks.org/how-to-create-and-use-signals-in-django/) For help in setting up my signals.py to allow instance of UserProfile to be created. 
+- [DevHandbook](https://www.devhandbook.com/django/user-profile/) For help in setting up my signals.py to allow instance of UserProfile to be created. 
+- [Django Documentation](https://docs.djangoproject.com/en/5.0/) was forever open when I was working on this project and helped to create my shuffle feature for the index page. 
+- [Bootstrap5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) helped with creating the navbar and recipe cards on the main page, it was my first time using Bootstrap so I did struggle at times applying my own custom CSS. 
 - All of the tutors for Code Institute who without I would be lost for this project, they were so patient and helpful to me especially after I had to start my database/models from scratch twice.
 - My mentor Luke for helping me througough this project and insite into Django models and hosting images. 
 - Code Institute for giving me the opportunity to upskill and create these projects.
