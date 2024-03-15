@@ -15,7 +15,7 @@ As well as this users will be able to create an account and log in to the blog, 
     - [Wireframes](#wireframes)
     - [Site Styling](#site-styling)
     - [Database Design](#database-design)
-* Features
+- [Features](#feature)
 * Testing
 * Languages and Technologies
 * Deployment
@@ -124,6 +124,106 @@ For the overall content of the site I decided to use the font Nunito, this font 
 #### LikedRecipe Model
 
 ## Features
+
+### Navbar
+
+The navbar was created using Bootstrap 5 in order to ensure it would be responsive across various viewports. When a user is not signed in the navbar will display the following:
+
+- Home
+- Recipes
+- Register
+- Login
+
+When the user is signed in the following is instead displayed:
+
+- Home
+- Recipes
+- My Profile
+- Sign Out
+
+#### Desktop - Signed out
+
+<img src="./documentation/features/navbar-desktop-signed-out.PNG">
+
+#### Desktop - Signed in
+
+<img src="./documentation/features/navbar-desktop.PNG">
+
+#### Mobile non-expanded
+
+<img src="./documentation/features/navbar-mobile1.PNG">
+
+#### Mobile expanded
+
+<img src="./documentation/features/navbar-mobile2.PNG">
+
+### Footer
+
+The footer for this site is used to contain links to various social media platforms. 
+
+<img src="./documentation/features/footer.PNG">
+
+### Home Page
+
+For this site the home page is used to introduce the user to ramen, with a short blurb which emphasises the cosiness of a bowle of ramen and ties in with the name of the site. 
+
+Under this there is a 'Recipes of the day' section, which displays 4 random recipes from the database to the user. This is changed on every refresh of the home page. 
+
+<img src="./documentation/features/main-page1.PNG">
+
+<img src="./documentation/features/main-page2.PNG">
+
+### Recipes List Page
+
+The recipe list page lets the user see all of the recipes that are available on site. From here they can also search for a particular recipe. 
+
+<img src="./documentation/features/recipe-list-desktop.PNG">
+
+### Recipe Search Page
+
+When a user searches for a particular recipe it is presented to them on a separate page. 
+
+<img src="./documentation/features/recipe-search.PNG">
+
+### Recipe Details Page
+
+On this page the user is presented with the name of the recipe, recipe image, ingredients and the necessary steps to create the dish. 
+
+<img src="./documentation/features/recipe-detail1.PNG">
+
+### Comments 
+
+Users are able to comment on any of the recipes, once approved it will be displayed on the page. If a user is logged in and has posted to the page they will see the option to 'Edit' or 'Delete' their comment. 
+
+<img src="./documentation/features/comments1.PNG">
+
+<img src="./documentation/features/comments2.PNG">
+
+### User Profile
+
+Here the user can see a page which displays their username, when the account was created and a profile picture. 
+
+<img src="./documentation/features/userprofile.PNG">
+
+In future I would like to display recently liked recipes and a scrollable list of recent comments, further to this an option to upload a profile picture as it is currently only possible through the admin panel. 
+
+### Sign Up
+
+From here if the user does not have an account they may register their account. 
+
+<img src="./documentation/features/signup.PNG">
+
+### Sign In
+
+For users that already have an account they can sign in here
+
+<img src="./documentation/features/sign in.PNG">
+
+### Sign Out
+
+When the user wishes to sign out they are presented with a message to ensure they do want to sign out. 
+
+<img src="./documentation/features/sign-out.PNG">
 
 ## Languages and Technologies
 
