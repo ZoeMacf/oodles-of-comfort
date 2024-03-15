@@ -295,9 +295,47 @@ All of the pages for this project were tested using [Google-Lighthouse](https://
 
 #### CSS Validation
 
-<img src="./documentation/testing/lighthouse/css-validation-before.PNG">
+For CSS validation [W3C-CSS-Validation](https://jigsaw.w3.org/css-validator/) was used. 
 
-<img src="./documentation/testing/lighthouse/css-validation-after.PNG">
+<img src="./documentation/testing/css-validation.PNG">
+
+#### HTML Validation
+
+HTML markup was validated using [W3C-HTML](https://validator.w3.org/nu/)
+
+##### Home Page
+
+<img src="./documentation/testing/index-html-test.PNG">
+
+##### Recipe List
+
+<img src="./documentation/testing/recipe-list-html-test.PNG">
+
+- The errors here were caused by the Django for loop, I did try to remove these and change them to a class but the css would not apply. As such they were left as IDs.
+
+##### Recipe Detail
+
+<img src="./documentation/testing/recipe-detail-html-test.PNG">
+
+- This error was caused by setting the font colour for the recipe ingredients and recipe steps within Summernote in the admin panel, the colouring would not apply when tried in stylesheet. 
+
+##### User Profile
+
+<img src="./documentation/testing/user-profile-test.PNG">
+
+##### Sign Up
+
+<img src="./documentation/testing/sign-up-html-test.PNG">
+
+- The signup.html was checked thoroughly for these errors but they could not be located. These errors appear to be from a preset for the password requirements. 
+
+##### Sign In 
+
+<img src="./documentation/testing/sign-in-test.PNG">
+
+##### Sign Out 
+
+<img src="./documentation/testing/sign-out-test.PNG">
 
 ## Deployment
 
