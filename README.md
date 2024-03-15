@@ -446,4 +446,26 @@ For this project the application was deployed to Heroku using the following step
 8. Ensure that the selected branch is 'main branch' before clicking to Deploy. 
 9. Once the build is finished there should be a message saying 'Your app was successfully deployed' with a 'View' button.
 
+### Site Content
+
+#### Recipes
+
+All of the recipes and recipe blurbs were created by [ChatGpt](https://chat.openai.com/) as to not infringe copyright by taking recipes from official recipe websites. 
+
+#### Images
+
+- Bowl of Noodles icon - [Flaticon](https://www.flaticon.com/free-icons/bowl-of-noodles)
+- Tonkotsu Ramen by Frank from 5 AM Ramen on [Unsplash](https://unsplash.com/photos/a-bowl-of-soup-with-a-spoon-in-it-fHSTIBefNXQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Miso Ramen by Brandi Alexandra [Unsplash](https://unsplash.com/photos/cooked-noodles-RjRXzc73bEw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Curry ramen Photo by sehoon ye on [Unsplash](https://unsplash.com/photos/a-bowl-of-food-okEQyTRrDL8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Seafood ramen Photo by Ryoo Geon Uk on [Unsplash](https://unsplash.com/photos/a-close-up-of-a-bowl-of-food-with-shrimp-Lpd-_F4CuUk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Kimchi ramen Photo by Zyanya Citlalli on [Unsplash](https://unsplash.com/photos/a-person-holding-chopsticks-over-a-bowl-of-soup-xFxtTov1YI4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Vegetarian ramen Photo by Volkan Kaçmaz on [Unsplash](https://unsplash.com/photos/white-ceramic-bowl-with-noodle-soup-fuq9iwil_-U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Vegan ramen Photo by Madalyn Cox on [Unsplash](https://unsplash.com/photos/a-bowl-of-food-with-noodles-meat-and-vegetables-KOxKoW8ms_E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Okinawa soba Photo by 8-Low Ural on [Unsplash](https://unsplash.com/photos/ramen-l3Mr7vSdmd4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- Tsukemen Photo by Matthew Hamilton on [Unsplash](https://unsplash.com/photos/soup-with-vegetable-beside-chopsticks-and-glass-of-water-RA4mwm9_jKA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+- User profile - Image by Stephanie Edwards from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973460)
+
+
+
 ## Credits
